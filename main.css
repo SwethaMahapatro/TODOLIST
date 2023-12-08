@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #4f2de6fe;
+    background-color: #3d76e9ae; /* Lightly darker background color */
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#new-task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#new-task-input,
+#category-select,
+#due-date,
+#new-task-submit {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #232734; /* Adjusted border color */
+    background-color: #fdfdff; /* Moderately lighter background color for input fields */
+    color: #3d3f46; /* Darker text color for input fields */
+}
+
+#new-task-input {
+    font-size: 1.25rem;
+}
+
+#category-select,
+#due-date,
+#new-task-submit {
+    font-size: 1rem;
+}
+
+#tasks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.task {
+    flex: 0 0 calc(48% - 1rem);
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    border: 2px solid #1e2023; /* Adjusted border color */
+    background-color: #f2f3f7; /* Lightly darker background color for tasks */
+    color: #111827; /* Darker text color for tasks */
+}
+
+.task .content {
+    flex: 1 1 100%;
+}
+
+.task .actions {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
